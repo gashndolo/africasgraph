@@ -1,0 +1,158 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f1f1f1;
+}
+/* The sidebar menu */
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #ffffff; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+/* polygons */
+.countries {
+    fill: grey;
+    fill-rule: nonzero;
+    pointer-events: visible;
+} 
+.meta {
+  width: 340px;
+  padding: 20px;
+  height: 200px;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+.flex-container {
+    flex-direction: column;
+}
+}
+.headStyle {
+    font-size: 20px;
+    color: #111;
+}
+.countryStyle {
+    font-size: 30px;
+    color: #111;
+
+}
+.numberStyle {
+    font-size: 60px;
+    color: #111;
+
+}
+h3,h2,p {
+  padding: 0px;
+  margin: 0px;
+}
+.numbers {
+    box-shadow: 5px 5px 5px 5px #888888;
+}
+#userIndicator {
+  margin: auto;
+  width: 95%;
+}
+input[type=text] {
+  width: 80px;
+  height: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 0px solid teal;
+  border-radius: 4px;
+}
+input[type=checkbox] {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.datainputs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid teal;
+  border-radius: 4px;
+}
+.datainputshead { 
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid rgb(128, 0, 28);
+  border-radius: 4px;
+} 
+.key {
+  width: max-content;
+}
+.exportImageButton {
+  margin-bottom: 30px;
+}
+
+th, td {
+  padding-bottom: 15px;
+  text-align: right;
+}
+.w3-third {
+  display: flex;
+}
+#getimage {
+  height: 40px;
+}
