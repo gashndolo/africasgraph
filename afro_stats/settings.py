@@ -26,9 +26,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '6=s-3&*hr78*()_031^d(w77!9u4#h^gcad1&g7uz9)3ym+xq)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['africasgraph.herokuapp.com', '127.0.0.1']
 
 
 # Application definition

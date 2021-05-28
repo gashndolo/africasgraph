@@ -1,0 +1,1 @@
+web: gunicorn afro_stats.wsgi --log-file -
