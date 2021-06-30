@@ -13,7 +13,7 @@
         <!-- loader n ting-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-        <script src="{% static 'render_frontend/js/load.js' %}"></script>
+        <!--<script src="{% static 'render_frontend/js/load.js' %}"></script>-->
 
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" type="text/css" href="{% static 'render_frontend/css/base.css' %}" /> 
@@ -22,7 +22,9 @@
     </head>
     
     <body class="w3-light-grey">
-      <div class="se-pre-con"></div>
+      <div id="loading">
+        <img id="loading-image" src="https://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif" alt="Loading..." />
+      </div>
         <div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
             <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
             <span class="w3-bar-item w3-right"><a href="#">Boundary data provided by GADM</a></span>
@@ -273,6 +275,11 @@
               <hr>
                     
     <canvas width="680px" height="720px"></canvas>
+    <script>
+      $(window).on('load', function () {
+        $('#loading').hide();
+      }) 
+    </script>
     <script src="{% static 'render_frontend/js/index.js' %}"></script> 
     
     <script src="{% static 'render_frontend/js/html2canvas.min.js' %}"></script>   
