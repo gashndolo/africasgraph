@@ -10,12 +10,19 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <!-- loader n ting-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+        <script src="{% static 'render_frontend/js/load.js' %}"></script>
+
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" type="text/css" href="{% static 'render_frontend/css/base.css' %}" /> 
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     </head>
+    
     <body class="w3-light-grey">
+      <div class="se-pre-con"></div>
         <div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
             <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
             <span class="w3-bar-item w3-right"><a href="#">Boundary data provided by GADM</a></span>
@@ -57,7 +64,7 @@
         <div class="w3-main" style="margin-left:300px;margin-top:43px;">
             <!-- Header -->
             <header class="w3-container" style="padding-top:22px">
-                <h5><b><i class="fa fa-dashboard"></i>Future Updates: more presets, multitone graphs, boundary correction</b></h5>
+                <h5><b><i class="fa fa-dashboard"></i>Future Updates: Cookies, more presets, multitone graphs, boundary correction</b></h5>
             </header>
 
             <!--<div class="w3-row-padding w3-margin-bottom">
